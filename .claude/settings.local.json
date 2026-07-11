@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($ANDROID_HOME = $env:ANDROID_HOME; if \\(-not $ANDROID_HOME\\) { $ANDROID_HOME = \"$env:LOCALAPPDATA\\\\Android\\\\Sdk\" }; Write-Host \"Android SDK: $ANDROID_HOME\"; Get-ChildItem \"$ANDROID_HOME\\\\emulator\" -ErrorAction SilentlyContinue | Select-Object -First 5)"
+    ]
+  }
+}

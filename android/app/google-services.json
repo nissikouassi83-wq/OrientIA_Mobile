@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "929532321800",
+    "project_id": "orientia-1b57f",
+    "storage_bucket": "orientia-1b57f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929532321800:android:a82e05c14c699fc0e471bd",
+        "android_client_info": {
+          "package_name": "ci.orientia.orientia_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929532321800-c8ehv8md4go5m0t4hhldp925loav49u0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ci.orientia.orientia_mobile",
+            "certificate_hash": "f2e5106809d0e3a86e135984d5784d4218a51300"
+          }
+        },
+        {
+          "client_id": "929532321800-b6iskg5f6gsokmq1jjnpp8lpcvb0fv3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcVESw726xyv9BLh5KXeDTNnQnQ7CGQaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929532321800-b6iskg5f6gsokmq1jjnpp8lpcvb0fv3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
