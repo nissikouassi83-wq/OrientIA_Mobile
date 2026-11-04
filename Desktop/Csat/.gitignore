@@ -1,7 +1,9 @@
 .venv/
+.vercel/
 __pycache__/
 *.py[cod]
 instance/*.sqlite3
+public/static/
 static/qr_cnps.png
 static/qr_cnps.svg
 qr_cnps.html

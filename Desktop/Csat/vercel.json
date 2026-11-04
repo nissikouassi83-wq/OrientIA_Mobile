@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "python prepare_vercel.py",
+  "functions": {
+    "app.py": {
+      "includeFiles": "{templates/**,data/**,public/static/**}",
+      "maxDuration": 30
+    }
+  }
+}

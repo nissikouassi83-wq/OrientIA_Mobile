@@ -82,27 +82,39 @@ ne fonctionnera que sur l’appareil qui héberge le serveur ; le générateur r
 ces adresses et exige une URL HTTPS publique. Après tout changement de
 destination, régénérez les fichiers.
 
-## Déploiement sur Render
+## Déploiement sur Vercel
 
-Le fichier `render.yaml` prépare le service web et un disque persistant pour
-que les réclamations ne disparaissent pas lors d’un redéploiement. Dans Render,
-créez un **Blueprint** depuis le dépôt GitHub et sélectionnez
-`Desktop/Csat/render.yaml`. Vérifiez le tarif du service et du disque affiché
-par Render avant de confirmer : le stockage persistant nécessite une offre
-payante.
+Le portail utilise Flask sur Vercel et Neon Postgres pour conserver les
+réclamations. Le stockage SQLite local reste utilisé pendant le développement.
 
-Après le déploiement, Render attribue une adresse HTTPS au portail. Pour créer
-le QR code qui ouvre ce portail, exécutez localement, en remplaçant l’exemple
-par cette adresse :
+1. Connectez-vous à Vercel et importez le dépôt GitHub
+   `nissikouassi83-wq/OrientIA_Mobile`.
+2. Dans les paramètres du projet Vercel, définissez **Root Directory** sur
+   `Desktop/Csat` et laissez Vercel détecter Flask/Python.
+3. Créez une base Postgres Neon et copiez sa chaîne de connexion
+   (`DATABASE_URL`) dans les variables d’environnement Vercel pour Production
+   et Preview. Ne publiez pas cette valeur dans le dépôt ni dans un message.
+4. Ajoutez également les variables `APP_ENV=production` et `SECRET_KEY`.
+   Générez une clé avec `python -c "import secrets; print(secrets.token_hex(32))"`
+   et copiez-la dans Vercel. Gardez cette clé privée.
+5. Déployez le projet. L’application crée automatiquement la table des
+   réclamations dans Neon au démarrage. Sans `DATABASE_URL`, le portail affiche
+   ses rubriques, mais refuse clairement les envois de réclamation.
+6. Après le déploiement, copiez l’adresse HTTPS attribuée par Vercel. Pour créer
+   le QR code qui ouvre **votre portail**, exécutez localement :
 
-```powershell
-$env:URL_PUBLIQUE = "https://votre-portail.onrender.com"
-python generer_qr.py
-```
+   ```powershell
+   $env:URL_PUBLIQUE = "https://votre-portail.vercel.app"
+   python generer_qr.py
+   ```
 
-Le QR code ouvre le portail déployé, et non le site officiel CNPS ni une adresse
-locale. Les plaintes sont conservées dans `/var/data/reclamations.sqlite3`.
-Gardez la base et les sauvegardes privées.
+   Remplacez l’exemple par l’adresse exacte fournie par Vercel. Le script crée
+   `static/qr_cnps.png`, `static/qr_cnps.svg` et `qr_cnps.html` pour imprimer
+   votre QR. Il ne faut pas utiliser `127.0.0.1` : cette adresse ne fonctionne
+   que sur l’ordinateur qui exécute le serveur.
+
+Les limites et tarifs Vercel et Neon dépendent de leurs offres en vigueur ;
+vérifiez-les dans vos comptes avant d’activer le déploiement.
 
 ## Vérifications locales
 
