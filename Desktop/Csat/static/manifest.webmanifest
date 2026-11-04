@@ -1,0 +1,32 @@
+{
+  "id": "/",
+  "name": "La CNPS, votre partenaire pour la vie",
+  "short_name": "CNPS",
+  "description": "Le portail CNPS accessible avec ou sans connexion.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#17467e",
+  "icons": [
+    {
+      "src": "/static/icons/cnps-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icons/cnps-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icons/cnps-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

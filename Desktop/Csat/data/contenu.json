@@ -1,0 +1,187 @@
+{
+  "sal": {
+    "t": "Régime des travailleurs salariés",
+    "ic": "👥",
+    "c": "t-blue",
+    "bg": "#1f3f94",
+    "d": "Vos droits, notre engagement : la CNPS couvre les risques sociaux liés à votre vie professionnelle et personnelle.",
+    "items": [
+      {
+        "t": "Allocations familiales",
+        "b": "<h4>Qu’est-ce que c’est ?</h4><p>Une somme d’argent payée par la CNPS pour aider aux charges des enfants.</p><h4>Ai-je droit ?</h4><p>Oui, si je suis un travailleur salarié, homme ou femme :</p><ul><li>immatriculé à la CNPS</li><li>justifiant de 3 mois au moins de travail continu chez un ou plusieurs employeurs</li><li>légalement marié</li><li>ayant au moins 1 enfant âgé de 1 à 21 ans</li></ul><p>Ou une femme salariée célibataire remplissant les autres conditions.</p><div class=\"nb\">Les conditions sont cumulatives.</div><h4>Quels enfants sont pris en compte ?</h4><ul><li>Les enfants issus du mariage légal</li><li>Les enfants nés avant le mariage légal, s’ils sont à ma charge</li><li>Les enfants légalement adoptés</li></ul><div class=\"nb\">Les enfants doivent résider sur le territoire ivoirien.</div><h4>Quel montant ?</h4><p><b>7 500 FCFA par mois et par enfant</b>, payés tous les trimestres.</p><h4>Date d’effet et rappel</h4><p>Les droits courent à partir du dépôt du dossier. Un rappel de deux ans maximum peut être payé à compter de la date à laquelle je remplis ma dernière condition.</p><h4>Pièces à fournir</h4><p><b>Travailleur :</b></p><ul><li>Extrait de naissance</li><li>Attestation de travail</li><li>Copie de la carte d’identité, carte consulaire ou attestation d’identité</li><li>Deux photos</li></ul><p><b>Conjoint :</b></p><ul><li>Extrait de naissance</li><li>Extrait d’acte de mariage</li><li>Copie de la carte d’identité, carte consulaire ou attestation d’identité</li><li>Deux photos</li></ul><p><b>Enfant :</b></p><ul><li>Extrait de naissance</li><li>Certificat médical pour les enfants non scolarisés</li><li>Attestation de scolarité pour les élèves et étudiants</li><li>Certificat de vie et d’entretien</li><li>Autorité parentale pour les enfants des femmes salariées célibataires</li></ul><h4>Maintenir mes paiements</h4><ul><li>Je renouvelle mon attestation de travail tous les 6 mois</li><li>Je renouvelle les attestations de fréquentation et les certificats médicaux de mes enfants chaque année entre octobre et décembre</li><li>Je déclare mon nouvel enfant dès qu’il a un an</li></ul>"
+      },
+      {
+        "t": "Assurance maternité",
+        "brochure": "assurance-maternite.pdf",
+        "b": "<h4>Qu’est-ce que c’est ?</h4><p>D’une part, des indemnités journalières payées en remplacement du salaire pendant le congé de maternité. D’autre part, le remboursement des frais médicaux et pharmaceutiques liés à la grossesse.</p><h4>Ai-je droit ?</h4><p>Oui, si je :</p><ul><li>suis une femme salariée</li><li>justifie de 3 mois au moins de travail continu chez un ou plusieurs employeurs</li><li>arrête effectivement de travailler pendant mon congé de maternité</li></ul><h4>Quel montant ?</h4><p><b>Indemnités journalières :</b> le salaire brut perçu avant le départ en congé, déduction faite des primes et indemnités de remboursement de frais professionnels et des impôts sur salaire.</p><p><b>Frais médicaux et pharmaceutiques :</b> montant déterminé par le Médecin Conseil de la CNPS sur la base du barème en vigueur.</p><h4>Périodes prises en compte</h4><p><b>Indemnités journalières :</b></p><ul><li>98 jours à compter du 7ème mois ½ de grossesse</li><li>21 jours maximum de prolongation si mon état de santé le nécessite</li><li>2 semaines de prolongation en cas de naissance multiple</li></ul><p><b>Frais médicaux :</b> 3 mois jusqu’à l’accouchement.</p><h4>Pièces avant l’accouchement</h4><ul><li>3 certificats médicaux (3ème, 6ème et 7ème mois et demi)</li><li>2 photos</li><li>3 derniers bulletins de salaire</li><li>Attestation de travail</li><li>Attestation de départ en congés</li><li>Copie de la CNI</li><li>Un RIB</li><li>Extrait de naissance de tous les enfants (parts d’impôts)</li><li>Acte de mariage en cas de mariage civil</li></ul><h4>Pièces après l’accouchement</h4><ul><li>Extrait de naissance de l’enfant</li><li>Certificat médical d’accouchement</li><li>Attestation de reprise de travail</li><li>Certificat médical de prolongation si nécessaire, validé par le médecin conseil de la CNPS</li></ul><h4>Pièces pour le remboursement des frais</h4><ul><li>Ordonnances médicales</li><li>Factures</li><li>Bulletins d’analyse et d’échographie</li><li>Tickets de caisse pharmacie</li><li>Reçus de paiement</li><li>Copie du certificat médical du 3ème mois cacheté par la CNPS</li><li>Photocopies de l’attestation de départ en congé</li><li>Attestation de reprise de travail</li><li>Certificat d’accouchement</li></ul><div class=\"nb\">Le dépôt des pièces du dossier d’indemnités journalières se fait désormais via la plateforme e-CNPS.</div>"
+      },
+      {
+        "t": "Accidents du travail et maladies professionnelles",
+        "brochure": "accidents-travail.pdf",
+        "b": "<h4>Qu’est-ce que c’est ?</h4><p><b>Accident :</b> survenu par le fait ou à l’occasion du travail ; pendant le trajet résidence–lieu de travail (si le parcours n’a pas été interrompu ou détourné pour un motif personnel) ; ou pendant les voyages dont les frais sont à la charge de l’employeur (mission, recrutement, déplacement…).</p><p><b>Maladie professionnelle :</b> maladie contractée par un travailleur exposé de façon habituelle à certains éléments nocifs dans l’exercice de sa fonction, et figurant sur la liste des 45 tableaux prévus par la loi.</p><h4>Ai-je droit ?</h4><p>Oui, si :</p><ul><li>je suis un travailleur salarié victime d’un accident du travail, de trajet ou d’une maladie professionnelle</li><li>l’accident ou la maladie a été déclaré à la CNPS dans les délais requis (48 heures pour l’employeur ; 24 mois pour l’accidenté ou ses ayants droit)</li><li>ma maladie figure dans les 45 tableaux de maladies professionnelles</li></ul><h4>Quelle prise en charge ?</h4><ul><li>Prestations en nature : frais médicaux, pharmaceutiques, prothèses, transport, rééducation, frais funéraires…</li><li>Indemnités journalières pendant toute la période d’incapacité temporaire de travail</li><li>Rente viagère en cas d’infirmité permanente</li></ul><h4>En cas de décès : rente reversée aux ayants droit</h4><ul><li><b>Conjoint survivant :</b> 30 % du salaire annuel de base (partagé équitablement s’il y a plusieurs conjoints)</li><li><b>Enfants :</b> 15 % pour chacun des deux premiers, 10 % à partir du troisième (moins de 21 ans)</li><li><b>Père et mère à charge :</b> 10 % chacun</li></ul><div class=\"nb\">L’ensemble des rentes ne peut dépasser 85 % du salaire de la victime.</div><p><b>Conjoint :</b> mariage célébré devant un officier d’état civil avant l’accident ; ni divorcé, ni séparé de corps, ni condamné pour abandon de famille. En cas de remariage, la rente cesse (indemnité d’au plus 3 fois la rente, différée s’il y a des enfants à charge).</p><h4>Maintenir ma rente</h4><ul><li>Victime ou ascendant : certificat de vie, une fois par an</li><li>Conjoint survivant : certificat de vie et attestation de non-remariage</li><li>Descendant : certificat de vie et d’entretien</li></ul>"
+      },
+      {
+        "t": "Assurance vieillesse",
+        "brochure": "assurance-vieillesse.pdf",
+        "b": "<h4>Qu’est-ce que c’est ?</h4><p>Un revenu de remplacement payé par la CNPS à la retraite, pour remplacer le salaire perçu pendant la vie active.</p><h4>Ai-je droit ?</h4><p>Oui, si j’ai été salarié immatriculé à la CNPS, cotisé au titre de la retraite, cessé toute activité salariée et atteint l’âge légal de <b>60 ans révolus</b>.</p><h4>Capital unique ou pension viagère</h4><ul><li>Moins de 2 ans de cotisations : remboursement des cotisations personnelles, en une fois</li><li>Plus de 2 ans et moins de 15 ans : allocation unique</li><li>À partir de 15 ans de cotisations : pension viagère, payée chaque mois</li></ul><p>Dès 60 ans et au moins 13 ans de cotisations, je peux racheter des périodes (24 mois maximum).</p><h4>Calcul de la pension</h4><ul><li><b>Étape 1 :</b> taux de remplacement : 2 % par année cotisée pendant les 15 premières années, puis 1,7 % par année à partir de la 16ème</li><li><b>Étape 2 :</b> salaire moyen mensuel = somme des 15 meilleurs salaires annuels ÷ 180</li><li><b>Étape 3 :</b> taux de remplacement × salaire moyen mensuel</li></ul><h4>Retraite anticipée</h4><p>Possible dès 55 ans avec au moins 15 ans de cotisations, avec un abattement définitif de 5 % par année d’anticipation.</p><h4>Pension d’invalidité</h4><p>Possible avec au moins 15 ans de cotisations et un taux d’invalidité, validé par le médecin conseil, supérieur ou égal à 66 %. Aucune condition d’âge.</p><h4>Impôt</h4><p>La pension est imposée uniquement pour la partie supérieure à 320 000 FCFA.</p><h4>Réversion en cas de décès</h4><p>50 % de la pension au conjoint survivant légalement marié et 50 % aux orphelins. Le conjoint doit avoir 55 ans au moins et être marié depuis au moins 2 ans avant le décès (anticipation possible dès 50 ans). L’orphelin doit avoir moins de 21 ans.</p><h4>Pièces pour la pension</h4><ul><li>Demande de liquidation (formulaire à retirer à la CNPS)</li><li>Certificat(s) de travail et relevé(s) nominatif(s) de salaires</li><li>Bulletins de salaire des 3 dernières années</li><li>Extrait de naissance du salarié et du conjoint, extrait d’acte de mariage</li><li>3 photos d’identité, copie de la CNI ou carte consulaire, RIB</li></ul><h4>Maintenir ma pension</h4><ul><li>Certificat de vie, une fois par an</li><li>Conjoint survivant : certificat de vie et attestation de non-remariage</li></ul>"
+      }
+    ]
+  },
+  "ind": {
+    "t": "Régime des travailleurs indépendants",
+    "ic": "💼",
+    "c": "t-gr",
+    "bg": "#16874a",
+    "d": "Protégez votre avenir : le RSTI vous offre une couverture sociale adaptée à votre activité.",
+    "items": [
+      {
+        "t": "Qu’est-ce que le RSTI ?",
+        "b": "<p>Le Régime Social des Travailleurs Indépendants est la couverture sociale <b>obligatoire</b> pour tous les travailleurs indépendants de Côte d’Ivoire. Il protège en cas de maladie, d’accident, de maternité et de vieillesse. Il est géré par la CNPS.</p><h4>Qui est concerné ?</h4><p>Agriculteurs, artisans, commerçants, transporteurs, sportifs, artistes, libéraux, consultants, exploitants miniers, dirigeants non-salariés d’entreprise, guides religieux et Ivoiriens travaillant à l’étranger.</p><div class=\"nb\"><b>À VALIDER — Texte de présentation rédigé pour cette maquette :</b> Le RSTI est le régime de protection sociale destiné aux personnes qui travaillent à leur compte. Il leur permet de cotiser selon leur activité et leur revenu déclaré pour bénéficier des prestations prévues par le régime.</div>"
+      },
+      {
+        "t": "Les prestations",
+        "b": "<ul><li><b>Maladie ou accident</b> (incapacité de plus de 14 jours) : indemnités journalières égales à 50 % du revenu déclaré, dans la limite de 90 000 FCFA/mois</li><li><b>Maternité</b> (3 mois d’arrêt) : indemnités égales à 100 % du revenu déclaré, dans la limite de 180 000 FCFA/mois</li><li><b>Pension de retraite</b> payée jusqu’au décès, reversée sous conditions aux ayants droit. Elle est double si le travailleur a cotisé au moins 10 ans à la retraite de base et 5 ans à la retraite complémentaire</li></ul>"
+      },
+      {
+        "t": "Les conditions d’affiliation",
+        "b": "<p>Je dois me déclarer à la CNPS en précisant mon métier et le montant de la cotisation que je m’engage à payer chaque mois. Elle est fixée librement, dans le respect du minimum de ma catégorie :</p><div class=\"tw\"><table><tr><th>Catégorie</th><th>Cotisation min. (12 %)</th><th>Revenu min.</th></tr><tr><td>Artisans</td><td>5 400</td><td>45 000</td></tr><tr><td>Artistes, médias, évènementiel</td><td>5 400</td><td>45 000</td></tr><tr><td>Sportifs</td><td>3 600</td><td>30 000</td></tr><tr><td>Religieux et assimilés</td><td>6 000</td><td>50 000</td></tr><tr><td>Exploitants agricoles</td><td>5 400</td><td>45 000</td></tr><tr><td>Transporteurs</td><td>9 000</td><td>75 000</td></tr><tr><td>Commerçants</td><td>3 600</td><td>30 000</td></tr><tr><td>Exploitants miniers</td><td>6 000</td><td>50 000</td></tr><tr><td>Professions libérales, mandataires sociaux</td><td>18 000</td><td>150 000</td></tr><tr><td>Consultants</td><td>12 000</td><td>100 000</td></tr><tr><td>Ivoiriens à l’étranger (taux 9 %)</td><td>13 500</td><td>150 000</td></tr></table></div><div class=\"nb\">Au-dessus de 21 600 FCFA de cotisation (revenu de plus de 180 000 FCFA), la différence est cotisée automatiquement à la retraite complémentaire au taux de 9 %.</div><p>Je dois aussi payer régulièrement mes cotisations et remplir les conditions prévues par la loi pour chaque prestation.</p>"
+      },
+      {
+        "t": "Payer mes cotisations sans frais",
+        "b": "<ul><li>Chèque dans toutes les agences CNPS</li><li>Wave : onglet « Paiements »</li><li>Orange Money : #144*453# ou l’application</li><li>Moov / CFA : *133*166# ou l’application</li><li>Cofina : tout le réseau d’agences</li></ul><div class=\"nb\">Offre soumise à conditions. Renseignements RSTI : 27 20 25 21 00 ou info@cnps.ci</div>"
+      }
+    ]
+  },
+  "ent": {
+    "t": "Informations pour les entreprises",
+    "ic": "🏢",
+    "c": "t-or",
+    "bg": "#d96a08",
+    "d": "Simplifiez vos démarches : affiliez votre entreprise et assurez la protection sociale de vos salariés.",
+    "items": [
+      {
+        "t": "L’affiliation d’une entreprise",
+        "brochure": "affiliation-entreprise-cnps.pdf",
+        "b": "<p>L’affiliation de l’employeur prend effet dès le <b>premier embauchage</b> d’un salarié, quel que soit le contrat (CDD, CDI, journalier, occasionnel, stage professionnel).</p><p>L’immatriculation donne un numéro matricule employeur, nécessaire pour déclarer et payer les cotisations. Pour les entreprises (personnes morales ou physiques), la demande se fait auprès du <b>CEPICI</b>. Les employeurs domestiques s’immatriculent et déclarent leurs employés via <b>e-CNPS</b>.</p>"
+      },
+      {
+        "t": "Pièces : entreprises",
+        "b": "<ul><li>Registre de Commerce et Crédit Mobilier (si assujettie)</li><li>Déclaration Fiscale d’Existence (si assujettie)</li><li>Statuts (si assujettie)</li><li>Agrément si obligatoire</li><li>Pièce administrative du dirigeant (CNI, carte consulaire, passeport)</li><li>Factures CIE ou SODECI pour localiser le siège, ou plan cadastral</li><li>État de recensement des salariés recrutés à l’ouverture</li><li>Adresse électronique et numéro de téléphone mobile</li></ul>"
+      },
+      {
+        "t": "Pièces : employeurs domestiques",
+        "b": "<p>Personne physique ayant un employé pour ses besoins domestiques (chauffeur, femme de ménage, gardien, jardinier, nounou, cuisinier…).</p><ul><li>Pièce administrative de l’employeur</li><li>Facture CIE ou SODECI</li><li>Contrat de bail si locataire</li><li>Adresse électronique et numéro de téléphone mobile</li></ul>"
+      },
+      {
+        "t": "Déclarer un salarié",
+        "b": "<p>La déclaration se fait en ligne sur <b>e-CNPS</b>, par l’employeur. Pièces :</p><ul><li>Carte CMU ou preuve d’enrôlement</li><li>CNI et extrait d’acte de naissance du travailleur</li><li>Photo d’identité pour la famille (conjoint et enfants)</li><li>Extrait d’acte de naissance du conjoint et des enfants</li><li>CNI du conjoint</li></ul>"
+      },
+      {
+        "t": "Les cotisations",
+        "b": "<p>Les prestations sont financées par les cotisations du salarié (part salarié) et de l’employeur (part employeur). <b>La déclaration et le paiement sont exclusivement à la charge de l’employeur</b>, après prélèvement de la part du salarié.</p><p>Elles sont calculées sur le total des rémunérations : salaire de base, sursalaires, primes, avantages en nature, assurances payées pour le salarié. Les indemnités de remboursement de frais sont exclues, ainsi que l’indemnité de transport dans la limite de l’exonération fiscale.</p>"
+      },
+      {
+        "t": "Déclarer et payer (CNPS et CMU)",
+        "b": "<ul><li>Cotisations dues en même temps que le salaire</li><li>Déclarations nominatives (par salarié) sur e-CNPS, au plus tard le 15 du mois qui suit le mois ou le trimestre échu</li><li>Paiement via e-CNPS, avec les habilitations de paiement électronique de la banque</li><li>Paiements aussi possibles via les plateformes des compagnies de téléphonie mobile</li></ul>"
+      }
+    ]
+  },
+  "site": {
+    "name": "La CNPS, votre partenaire pour la vie",
+    "platforms_section": {
+      "title": "Plateformes digitales et centre de contacts",
+      "description": "Choisissez le canal qui vous convient."
+    },
+    "platforms": [
+      {
+        "id": "ecnps",
+        "icon": "💻",
+        "title": "e-CNPS – Mon espace personnel",
+        "description": "Dépôt de dossiers et suivi des démarches",
+        "url": "https://e.cnps.ci",
+        "external": true
+      },
+      {
+        "id": "website",
+        "icon": "🌐",
+        "title": "Site internet",
+        "description": "www.cnps.ci",
+        "url": "https://www.cnps.ci",
+        "external": true
+      },
+      {
+        "id": "free-call",
+        "icon": "📞",
+        "title": "Appel gratuit : 1396",
+        "description": "Centre de contacts clients",
+        "url": "tel:1396",
+        "external": false
+      },
+      {
+        "id": "standard",
+        "icon": "☎️",
+        "title": "Standard : 27 20 25 20 50",
+        "description": "Accueil téléphonique CNPS",
+        "url": "tel:+2252720252050",
+        "external": false
+      },
+      {
+        "id": "rsti-phone",
+        "icon": "📱",
+        "title": "RSTI : 27 20 25 21 00",
+        "description": "Informations sur le régime des indépendants",
+        "url": "tel:+2252720252100",
+        "external": false
+      },
+      {
+        "id": "email",
+        "icon": "✉️",
+        "title": "info@cnps.ci",
+        "description": "Écrivez-nous",
+        "url": "mailto:info@cnps.ci",
+        "external": false
+      },
+      {
+        "id": "whatsapp",
+        "icon": "💬",
+        "title": "Discuter sur WhatsApp",
+        "description": "Écrivez au centre de contacts CNPS",
+        "url": "",
+        "external": true
+      },
+      {
+        "id": "appointment",
+        "icon": "📍",
+        "title": "Agences CNPS",
+        "description": "01 BP 317 Abidjan 01 — Rendez-vous en agence",
+        "url": "",
+        "external": true
+      },
+      {
+        "id": "google-play",
+        "icon": "▶️",
+        "title": "Télécharger l’application RSTI — Google Play",
+        "description": "Application mobile Android",
+        "url": "",
+        "external": true
+      },
+      {
+        "id": "app-store",
+        "icon": "🍎",
+        "title": "Télécharger l’application RSTI — App Store",
+        "description": "Application mobile iPhone",
+        "url": "",
+        "external": true
+      }
+    ],
+    "whatsapp_number": "2250000000000",
+    "google_play_url": "https://play.google.com/store/search?q=CNPS%20C%C3%B4te%20d%27Ivoire&c=apps",
+    "app_store_url": "https://apps.apple.com/ci/search?term=CNPS",
+    "appointment_url": "https://maps.google.com/?q=CNPS+Abidjan+Cote+d%27Ivoire",
+    "complaint_methods": [
+      "Appel gratuit : 1396",
+      "Courriel : info@cnps.ci",
+      "Accueil dans une agence CNPS"
+    ]
+  }
+}

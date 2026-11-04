@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}{{ section.t }} — CNPS{% endblock %}
+{% block content %}
+<a class="back" href="{{ url_for('home') }}">‹ Accueil</a>
+<header class="head {{ section.c }}">
+  <h1><span aria-hidden="true">{{ section.ic }}</span> {{ section.t }}</h1>
+  <p>{{ section.d }}</p>
+</header>
+<section class="accordions" aria-label="{{ section.t }}">
+  {% for item in section["items"] %}
+  <details id="prestation-{{ loop.index0 }}">
+    <summary>{{ item.t }}</summary>
+    <div class="body">{{ item.safe_body }}</div>
+  </details>
+  {% endfor %}
+</section>
+{% set brochures = section["items"] | selectattr("brochure") | list %}
+{% if brochures %}
+<section class="downloads" aria-labelledby="brochures-title">
+  <h2 id="brochures-title">Télécharger les brochures</h2>
+  <div class="download-list">
+    {% for brochure in brochures %}
+    <a class="button button-secondary brochure-download"
+       href="{{ url_for('static', filename='brochures/' ~ brochure.brochure) }}"
+       download="{{ brochure.brochure }}"
+       aria-label="Télécharger la brochure sur {{ brochure.t }} au format PDF">
+      Télécharger la brochure sur {{ brochure.t }} (PDF)
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+{% endblock %}

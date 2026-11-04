@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Plateformes digitales et contacts — CNPS{% endblock %}
+{% block content %}
+<a class="back" href="{{ url_for('home') }}">‹ Accueil</a>
+<header class="head t-pu">
+  <h1><span aria-hidden="true">🎧</span> {{ section.title }}</h1>
+  <p>{{ section.description }}</p>
+</header>
+<section class="contact-cards" aria-label="Canaux de contact">
+  {% for item in platforms %}
+    {% if item.id == "appointment" %}
+    <a class="contact-card" id="agences" href="{{ appointment_url }}" target="_blank" rel="noopener noreferrer">
+    {% elif item.url %}
+    <a class="contact-card" href="{{ item.url }}" {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+    {% else %}
+    <div class="contact-card contact-card-disabled">
+    {% endif %}
+      <span class="contact-icon" aria-hidden="true">{{ item.icon }}</span>
+      <span><strong>{{ item.title }}</strong><small>{{ item.description }}</small></span>
+    {% if item.id == "appointment" or item.url %}</a>{% else %}</div>{% endif %}
+  {% endfor %}
+</section>
+{% endblock %}

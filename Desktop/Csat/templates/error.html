@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Erreur {{ code }} — CNPS{% endblock %}
+{% block content %}
+<a class="back" href="{{ url_for('home') }}">‹ Accueil</a>
+<section class="error-card">
+  <h1>Erreur {{ code }}</h1>
+  <p>{{ message }}</p>
+  <a class="button button-primary" href="{{ url_for('home') }}">Retour à l’accueil</a>
+</section>
+{% endblock %}

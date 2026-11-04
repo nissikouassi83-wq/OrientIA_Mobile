@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Réclamation — CNPS{% endblock %}
+{% block content %}
+<a class="back" href="{{ url_for('home') }}">‹ Accueil</a>
+<header class="head t-pu">
+  <h1>📝 Réclamation</h1>
+  <p>Décrivez votre demande. Les champs marqués d’un astérisque sont obligatoires.</p>
+</header>
+{% if ticket %}
+<section class="confirmation" role="status" aria-live="polite">
+  <h2>Votre réclamation a bien été enregistrée.</h2>
+  <p>Conservez votre numéro de suivi :</p>
+  <p class="ticket">{{ ticket }}</p>
+  <p>La CNPS pourra vous recontacter au numéro indiqué.</p>
+</section>
+{% else %}
+<p class="offline-notice">
+  Votre demande peut être préparée hors connexion. Elle sera envoyée automatiquement
+  quand vous retrouverez Internet. Les informations restent temporairement sur cet appareil.
+</p>
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  <div class="notices" role="alert">
+    {% for category, message in messages %}<p class="notice {{ category }}">{{ message }}</p>{% endfor %}
+  </div>
+  {% endif %}
+{% endwith %}
+<form class="complaint-form" method="post" action="{{ url_for('reclamation') }}">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <input type="hidden" name="offline_ticket" value="">
+  <label for="name">Nom complet <span aria-hidden="true">*</span></label>
+  <input id="name" name="name" autocomplete="name" maxlength="100" required value="{{ values.name }}">
+
+  <label for="phone">Téléphone <span aria-hidden="true">*</span></label>
+  <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" required value="{{ values.phone }}">
+
+  <label for="insured_number">Numéro d’assuré <span class="optional">(facultatif)</span></label>
+  <input id="insured_number" name="insured_number" maxlength="40" value="{{ values.insured_number }}">
+
+  <label for="subject">Objet <span aria-hidden="true">*</span></label>
+  <input id="subject" name="subject" maxlength="120" required value="{{ values.subject }}">
+
+  <label for="message">Message <span aria-hidden="true">*</span></label>
+  <textarea id="message" name="message" rows="6" maxlength="5000" required>{{ values.message }}</textarea>
+  <button class="button button-primary" type="submit">Envoyer ma réclamation</button>
+</form>
+<section class="quick-contact">
+  <h2>Vous préférez un autre canal ?</h2>
+  <p>Appel gratuit : <a href="tel:1396">1396</a> ·
+    <a href="mailto:info@cnps.ci">info@cnps.ci</a> ·
+    <a href="{{ url_for('rubrique', slug='plateformes') }}#agences">Rendez-vous en agence</a>
+  </p>
+</section>
+{% endif %}
+{% endblock %}

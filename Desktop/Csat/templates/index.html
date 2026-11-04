@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="home-heading">
+  <img class="logo" src="{{ url_for('static', filename='cnps_logo.jpeg') }}" alt="Logo CNPS">
+  <p class="brand">CNPS</p>
+  <h1>La CNPS, votre partenaire pour la vie</h1>
+  <p class="lead">Retrouvez vos droits, les pièces à fournir et nos contacts.</p>
+  <p class="access-note"><span aria-hidden="true">✓</span> Accès libre, sans compte ni mot de passe</p>
+</header>
+
+<label class="sr-only" for="search">Rechercher une information</label>
+<input id="search" class="search" type="search" placeholder="Rechercher une information…" autocomplete="off">
+<div id="search-results" class="results" aria-live="polite"></div>
+<section class="grid" aria-label="Choisir une rubrique">
+  {% for key, section in sections.items() %}
+  <a class="tile {{ section.c }}" href="{{ url_for('rubrique', slug=key) }}">
+    <span aria-hidden="true">{{ section.ic }}</span>{{ section.t }}
+  </a>
+  {% endfor %}
+  <a class="tile t-pu" href="{{ url_for('rubrique', slug='plateformes') }}">
+    <span aria-hidden="true">🎧</span>Plateformes digitales et centre de contacts
+  </a>
+</section>
+
+<a class="claim-banner" href="{{ url_for('reclamation') }}">
+  <span class="claim-icon" aria-hidden="true">📝</span>
+  <span class="claim-copy">
+    <small>UNE QUESTION OU UN PROBLÈME ?</small>
+    <strong>Déposer une réclamation</strong>
+    <span>Expliquez-nous votre situation, sans compte.</span>
+  </span>
+  <span class="claim-arrow" aria-hidden="true">›</span>
+</a>
+<section class="help-desk" aria-labelledby="claim-options">
+  <div class="help-heading">
+    <span class="help-kicker">NOUS SOMMES À VOTRE ÉCOUTE</span>
+    <h2 id="claim-options">Besoin de nous joindre ?</h2>
+    <p>Choisissez le moyen qui vous convient.</p>
+  </div>
+  <div class="quick-contacts">
+    <a class="quick-contact contact-phone" href="tel:1396">
+      <span class="quick-icon" aria-hidden="true">☎</span>
+      <span><small>APPEL GRATUIT</small><strong>1396</strong></span>
+      <span class="quick-arrow" aria-hidden="true">›</span>
+    </a>
+    <a class="quick-contact contact-email" href="mailto:info@cnps.ci">
+      <span class="quick-icon" aria-hidden="true">✉</span>
+      <span><small>ÉCRIVEZ-NOUS</small><strong>info@cnps.ci</strong></span>
+      <span class="quick-arrow" aria-hidden="true">›</span>
+    </a>
+    <a class="quick-contact contact-agency" href="{{ url_for('rubrique', slug='plateformes') }}#agences">
+      <span class="quick-icon" aria-hidden="true">⌖</span>
+      <span><small>À PROXIMITÉ</small><strong>Une agence CNPS</strong></span>
+      <span class="quick-arrow" aria-hidden="true">›</span>
+    </a>
+  </div>
+</section>
+
+<div class="share-actions">
+  <button class="button button-primary" type="button" data-share>Partager ce guide</button>
+</div>
+<script id="search-index" type="application/json">{{ {"sections": sections, "extras": platforms, "complaints": complaints}|tojson }}</script>
+{% endblock %}
