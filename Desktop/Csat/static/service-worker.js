@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_NAME = "cnps-portail-v11";
+const CACHE_NAME = "cnps-portail-v16";
 
 self.addEventListener("install", (event) => {
   event.waitUntil((async () => {

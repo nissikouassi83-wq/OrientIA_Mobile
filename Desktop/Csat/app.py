@@ -216,6 +216,7 @@ def add_security_headers(response):
 
 
 @app.get("/service-worker.js")
+@app.get("/service-worker-v16.js")
 def service_worker():
     response = app.send_static_file("service-worker.js")
     response.headers["Service-Worker-Allowed"] = "/"
@@ -236,6 +237,11 @@ def legacy_qr_redirect():
 
 
 @app.get("/")
+def portal_entry():
+    return render_template("portal.html")
+
+
+@app.get("/accueil")
 def home():
     sections = {
         key: {**prepare_section(section), "key": key}

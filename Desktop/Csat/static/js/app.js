@@ -90,7 +90,7 @@
   }
 
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/service-worker.js")
+    (window.portalServiceWorkerRefresh || navigator.serviceWorker.register("/service-worker-v16.js"))
       .then(() => navigator.serviceWorker.ready)
       .then(async () => {
         await cachePortalResources();
@@ -111,9 +111,10 @@
   updateConnectionStatus();
 
   window.addEventListener("beforeinstallprompt", (event) => {
+    if (!installButton) return;
     event.preventDefault();
     installPrompt = event;
-    if (installButton) installButton.hidden = false;
+    installButton.hidden = false;
   });
 
   if (installButton) {
@@ -217,7 +218,7 @@
 
   async function cachePortalResources() {
     const requiredResources = [
-      "/", "/rubrique/sal", "/rubrique/ind", "/rubrique/ent",
+      "/", "/accueil", "/rubrique/sal", "/rubrique/ind", "/rubrique/ent",
       "/rubrique/plateformes", "/reclamation", "/offline.html",
       "/static/css/style.css", "/static/js/app.js", "/static/manifest.webmanifest",
       "/static/cnps_logo.jpeg", "/static/icons/cnps-192.png",
@@ -229,7 +230,7 @@
     ];
     if (!navigator.onLine || !("caches" in window)) return;
     try {
-      const cache = await caches.open("cnps-portail-v11");
+      const cache = await caches.open("cnps-portail-v16");
       const cached = await Promise.all(requiredResources.map(async (url) => {
         try {
           let response = await cache.match(url);

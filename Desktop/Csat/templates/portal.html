@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Bienvenue sur le portail CNPS{% endblock %}
+{% block body_class %}portal-entry-page{% endblock %}
+{% block offline_status %}{% endblock %}
+{% block content %}
+<section class="portal-welcome" aria-labelledby="portal-title">
+  <img class="portal-logo" src="{{ url_for('static', filename='cnps_logo.jpeg') }}" alt="Logo CNPS">
+  <p class="portal-kicker">PORTAIL OFFICIEL D’INFORMATION</p>
+  <h1 id="portal-title">Bienvenue sur votre portail CNPS</h1>
+  <p class="portal-intro">
+    Retrouvez facilement vos droits, vos démarches et les moyens de contacter
+    la Caisse Nationale de Prévoyance Sociale.
+  </p>
+  <a class="button button-primary portal-enter" href="{{ url_for('home') }}">
+    Accéder au portail
+    <span aria-hidden="true">›</span>
+  </a>
+  <p class="portal-access">Accès libre, sans compte ni mot de passe</p>
+</section>
+{% endblock %}
+{% block footer %}{% endblock %}
