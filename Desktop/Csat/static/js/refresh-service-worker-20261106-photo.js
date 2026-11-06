@@ -3,7 +3,7 @@
 
   if (!("serviceWorker" in navigator)) return;
 
-  const workerUrl = new URL("/service-worker-v16.js", window.location.origin).href;
+  const workerUrl = new URL("/service-worker-v17.js", window.location.origin).href;
   let refreshing = false;
   navigator.serviceWorker.addEventListener("controllerchange", () => {
     if (refreshing) return;
@@ -20,7 +20,7 @@
     );
     const portalCaches = cacheNames.filter((name) => name.startsWith("cnps-portail-"));
     const cachesToDelete = currentRegistration
-      ? portalCaches.filter((name) => name !== "cnps-portail-v16")
+      ? portalCaches.filter((name) => name !== "cnps-portail-v17")
       : portalCaches;
 
     if (cachesToDelete.length || (registrations.length && !currentRegistration)) {

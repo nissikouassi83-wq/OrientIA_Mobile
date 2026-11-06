@@ -90,7 +90,7 @@
   }
 
   if ("serviceWorker" in navigator) {
-    (window.portalServiceWorkerRefresh || navigator.serviceWorker.register("/service-worker-v16.js"))
+    (window.portalServiceWorkerRefresh || navigator.serviceWorker.register("/service-worker-v17.js"))
       .then(() => navigator.serviceWorker.ready)
       .then(async () => {
         await cachePortalResources();
@@ -221,6 +221,7 @@
       "/", "/accueil", "/rubrique/sal", "/rubrique/ind", "/rubrique/ent",
       "/rubrique/plateformes", "/reclamation", "/offline.html",
       "/static/css/style.css", "/static/js/app.js", "/static/manifest.webmanifest",
+      "/static/images/construction-worker-togo.jpg",
       "/static/cnps_logo.jpeg", "/static/icons/cnps-192.png",
       "/static/icons/cnps-512.png", "/static/favicon.ico",
       "/static/brochures/assurance-maternite.pdf",
@@ -230,7 +231,7 @@
     ];
     if (!navigator.onLine || !("caches" in window)) return;
     try {
-      const cache = await caches.open("cnps-portail-v16");
+      const cache = await caches.open("cnps-portail-v17");
       const cached = await Promise.all(requiredResources.map(async (url) => {
         try {
           let response = await cache.match(url);

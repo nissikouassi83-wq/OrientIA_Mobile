@@ -217,6 +217,7 @@ def add_security_headers(response):
 
 @app.get("/service-worker.js")
 @app.get("/service-worker-v16.js")
+@app.get("/service-worker-v17.js")
 def service_worker():
     response = app.send_static_file("service-worker.js")
     response.headers["Service-Worker-Allowed"] = "/"
